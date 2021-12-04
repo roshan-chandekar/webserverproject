@@ -6,7 +6,7 @@ pipeline {
                  git url: "https://github.com/roshan-chandekar/webserverproject.git"
             }
         }
-        Stage ("Archive Artifacts") {
+        stage ("Archive Artifacts") {
             steps {
                 archiveArtifacts "**/*.html"
             }
